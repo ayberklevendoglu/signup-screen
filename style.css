@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --color--sky: #4682a9;
+  --color--white: #fff;
+  --color--black: #000;
+  --color--light: #e5e7eb;
+  --color--lightsky: #91c8e4;
+}
+@font-face {
+  font-family: odinFont;
+  src: url(./fonts/Norse-Bold.otf);
+}
+.container {
+  display: flex;
+  font-family: "Roboto", sans-serif;
+}
+.clr-primary {
+  color: var(--color--sky);
+}
+/* LEFT PART */
+.left-content {
+  flex: 1;
+  position: relative;
+  background: url(./images/pexels-bas-masseus-1253640.jpg) no-repeat center
+    center/cover;
+  height: 100vh;
+  width: 600px;
+  color: var(--color--white);
+}
+#logo {
+  height: 200px;
+  background-color: var(--color--black);
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 15rem;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo-img {
+  height: 180px;
+}
+.logo-text {
+  font-size: 125px;
+  font-family: odinFont;
+}
+.photo-link {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.photo-link div {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+.photo-link a {
+  color: var(--color--white);
+}
+
+/* Main content */
+.main-content {
+  flex: 2;
+  background: var(--color--light);
+}
+.main1 {
+  margin: 170px 100px 75px 50px;
+  max-width: 800px;
+  text-align: left;
+}
+.main1 > h2 {
+  margin-bottom: 25px;
+  line-height: 1.2;
+}
+
+/* form */
+.main2 {
+  max-height: 35vh;
+  background-color: var(--color--white);
+  padding: 25px 50px;
+  box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.1);
+}
+.form-container {
+  display: flex;
+  gap: 6rem;
+}
+
+.form-container label {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 2px;
+  font-family: "Roboto", sans-serif;
+  opacity: 0.7;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+.form-container input {
+  height: 2rem;
+  width: 16rem;
+  border: 1px solid var(--color--light);
+  border-radius: 5px;
+}
+.form-container input:focus {
+  outline: none;
+  border: 2px solid var(--color--sky);
+}
+
+/*  content 3 */
+
+.main3 {
+  padding-left: 50px;
+  padding-top: 30px;
+}
+.main3 .btn {
+  color: var(--color--white);
+  text-decoration: none;
+  font-size: 18px;
+  background: var(--color--sky);
+  padding: 13px 40px;
+  border-radius: 10px;
+}
+.btn:hover {
+  background: var(--color--lightsky);
+}
+
+.main3 div {
+  margin-top: 30px;
+  font-weight: 400;
+  font-size: 18px;
+  opacity: 0.8;
+}
+.main3 div a {
+  text-decoration: none;
+  font-weight: 700;
+}
